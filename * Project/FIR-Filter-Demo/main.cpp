@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
     //                                    200.0f); //highTransBw
     
     float frequency = 4500.0f;
-    float duration = 0.015f;
+    float duration = 0.010f;
     filter->test(frequency,
                  duration);
     
