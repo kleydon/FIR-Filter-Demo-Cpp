@@ -8,27 +8,28 @@ Implements a windowed sync FIR using the overlap-and-add method.
 ```
 FIRFilter* filter = &FIRFilter::getSingleton();
     
-//Low Pass
+//Low Pass:
 filter->initializeAsLowPass(44100.0f, //sample rate
                             256, //frame length
                             4000.0f, //cutoff frequency
                             1000.0f); //transition bandwidth
     
-//..or High Pass
+//High Pass:
 filter->initializeAsHighPass(44100.0, //sample rate
                              256, //frame length
                              1000.0f, //cutoff frequency
                              1000.0f); //transition bandwidth
     
 
-//...or Band Pass
+//Band Pass:
 filter->initializeAsBandPass(44100.0, //sample rate
                              256, //frame length
                              500.0f, //low cutoff frequency
                              200.0f, //low transition bandwidth
                              4000.0f, //high cutoff frequency
                              200.0f); //high transition bandwidth
-    
+
+//Demo/Test:
 float frequency = 4500.0f;
 float duration = 0.010f;
 filter->test(frequency, duration);
