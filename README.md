@@ -1,1 +1,1 @@
-# Drumstick-Simulator-Sample-Python
+# FIR-Filter Class written in C++
