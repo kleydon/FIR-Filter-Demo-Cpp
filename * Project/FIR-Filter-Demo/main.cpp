@@ -2,7 +2,7 @@
 //
 //FIR Filter Demo
 //
-//Classes to implement a FIR filter, with low/high/band-pass variants and "output good indication".
+//Classes to implement a FIR filter, with low/high/band-pass variants.
 //Specifically, its a windowed sinc FIR filter, employing the overlap-and-add method.
 
 #include <iostream>
