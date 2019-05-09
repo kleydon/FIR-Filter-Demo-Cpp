@@ -31,4 +31,10 @@ filter->initializeAsBandPass(44100.0, //sampleRate
     
 float frequency = 4500.0f;
 float duration = 0.010f;
-filter->test(frequency, duration);```
+filter->test(frequency, duration);
+
+//filter->test() calls:
+applyFilter(const float inputFrameSamples[],
+            float outputFrameSamples[]) 
+//...which can be in-place w.r.t. input and output.
+```
